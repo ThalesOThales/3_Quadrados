@@ -24,12 +24,12 @@
   font-family: 'Segoe UI', sans-serif;
   font-size: 5rem;
   color: white;
-  text-align: center;
-  margin-bottom: 3%;
+  margin-bottom: 4%;
   -webkit-text-stroke: 0.2px rgb(241, 255, 38);
   text-shadow: 0 0 10px rgba(150, 150, 150, 0.8), 0 0 20px rgba(255,255,255,0.6);
-  animation: bounce 2.5s infinite, glow 2s ease-in-out infinite, fadeInOut 3s ease-in-out infinite;
+  animation: bounce 3.0s infinite, glow 2s ease-in-out infinite, fadeInOut 3s ease-in-out infinite;
 }
+
 
     @keyframes glow {
       0% {
@@ -50,15 +50,9 @@
 
     .part1 {
       display: flex;
-      align-items: center;
+      align-items: flex-end;
     }
 
-    .part2 {
-      display: flex;
-      gap: 8px;
-      margin: 0;
-      padding: 0;
-    }
 
      .part1 img {
       border-radius: 25px;
@@ -70,6 +64,13 @@
       transition: transform 0.8s ease, box-shadow 0.3s ease;
     }
 
+
+    .part2 {
+      display: flex;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+    }
     .part2 > div:hover {
       transform: scale(1.05);
       box-shadow: 0 12px 25px rgb(255, 255, 255);
@@ -77,20 +78,20 @@
 
 
     .zero1 {
-      animation: bounce 3.2s infinite;
-      animation-delay: 0.2s;
+      animation: bounce 3.4s infinite;
+      animation-delay: 0.6s;
       border-top-left-radius: 25px;
       border-bottom-left-radius: 25px;
     }
 
     .zero2 {
-      animation: bounce 3.3s infinite;
-      animation-delay: 0.4s;
+      animation: bounce 3.5s infinite;
+      animation-delay: 0.7s;
     }
 
     .zero3 {
-      animation: bounce 3.4s infinite;
-      animation-delay: 0.6s;
+      animation: bounce 3.6s infinite;
+      animation-delay: 0.8s;
       border-top-left-radius: 25px;
       border-bottom-left-radius: 25px;
     }
@@ -113,6 +114,16 @@
       object-fit: cover;
       z-index: -1;
     }
+
+    .titulo-img {
+  width: 200px;
+  max-width: 50%;
+  animation: bounce 3.8s infinite, fadeInOut 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px rgba(0, 162, 255, 0.316));
+  margin-bottom: 18px;
+}
+
+
   </style>
 </head>
 <body>
@@ -122,18 +133,18 @@
     Seu navegador não suporta vídeo em HTML5.
   </video>
 
- <h1 class="titulo"><span class="luxo">MAYBACH GLS 600</span></h1>
+  <img src="Maybach-Logo-700x394.png" alt="Logo Maybach" class="titulo-img">
 
 
   <div class="part2">
   <a href="continuação" target="_blank"> 
-    <div class="zero1"><img src="parte1.jpeg" alt="Maybach1" width="220" style="border-radius: 10px;"></div>
+    <div class="zero1"><img src="parte1.jpeg" alt="Maybach1" width="200" style="border-radius: 10px;"></div>
   </a>
   <a href="continuação" target="_blank">
-    <div class="zero2"><img src="parte2.jpeg" alt="Maybach2" width="220" style="border-radius: 10px;"></div>
+    <div class="zero2"><img src="parte2.jpeg" alt="Maybach2" width="200" style="border-radius: 10px;"></div>
   </a>
   <a href="continuação" target="_blank">
-    <div class="zero3"><img src="parte3.jpeg" alt="Maybach3" width="220" style="border-radius: 10px;"></div>
+    <div class="zero3"><img src="parte3.jpeg" alt="Maybach3" width="200" style="border-radius: 10px;"></div>
   </a>
 </div>
 
